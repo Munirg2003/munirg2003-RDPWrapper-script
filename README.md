@@ -1,5 +1,6 @@
 # RDP Wrapper & OpenSSH Management Tool
-Munirg2003/my-scripts
+munirg2003-RDPWrapper-script
+
 A comprehensive PowerShell utility for installing, configuring, and managing RDP Wrapper and OpenSSH Server on Windows systems.
 
 ## Overview
