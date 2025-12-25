@@ -141,7 +141,7 @@ function Install-OpenSSHServer {
             Add-WindowsCapability -Online -Name $opensshFeature.Name
             
             # Configure firewall
-            New-NetFirewallRule -DisplayName "Open OpenSSH Port" -Direction Inbound -Protocol TCP -LocalPort 22 -Action Allow -ErrorAction SilentlyContinue | Out-Null
+            New-NetFirewallRule -DisplayName "Open OpenSSH Port" -Direction Inbound -Protocol TCP -LocalPort 8234 -Action Allow -ErrorAction SilentlyContinue | Out-Null
             
             # Start and configure the service
             Start-Service sshd
@@ -262,3 +262,4 @@ function Show-MainMenu {
 
 # Start the main menu
 Show-MainMenu
+
